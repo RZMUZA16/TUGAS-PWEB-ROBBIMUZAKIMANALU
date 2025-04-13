@@ -29,6 +29,7 @@ const JuzSide = () => {
   };
 
   return (
+    <div className="full-page">
     <div className="JuzSide container">
       <div className="d-flex justify-content-between align-items-center mb-4 position-relative">
         <h2 className="mb-0">Juz {selectedJuz}</h2>
@@ -82,6 +83,7 @@ const JuzSide = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
