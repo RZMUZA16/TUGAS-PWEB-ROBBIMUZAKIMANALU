@@ -14,7 +14,7 @@
   }
   
   .footer-inner {
-    padding: 12px; /* kira-kira seperti p-3 di Tailwind */
+    padding: 12px; 
   }
   
   .footer-container{
@@ -23,7 +23,7 @@
     align-items: center;
     height: 100%;
   }
-  /* Dropdown parent item */
+ 
 .navbar .nav-item.dropdown .nav-link {
   color: #333;
   font-weight: 500;
@@ -34,10 +34,10 @@
 
 .navbar .nav-item.dropdown .nav-link:hover,
 .navbar .nav-item.dropdown .nav-link:focus {
-  color: #007bff; /* Bootstrap blue */
+  color: #007bff; 
 }
 
-/* Dropdown menu styling */
+
 .dropdown-menu {
   background-color: #ffffff;
   border-radius: 0.5rem;
@@ -47,7 +47,7 @@
   min-width: 10rem;
 }
 
-/* Individual dropdown item */
+
 .dropdown-menu .dropdown-item {
   color: #333;
   padding: 8px 16px;
@@ -60,7 +60,7 @@
   color: #007bff;
 }
 
-/* Optional: active state */
+
 .dropdown-menu .dropdown-item.active {
   background-color: #007bff;
   color: #fff;

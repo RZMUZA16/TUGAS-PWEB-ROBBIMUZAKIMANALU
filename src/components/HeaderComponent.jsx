@@ -8,7 +8,7 @@ const HeaderComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Jika searchTerm tidak kosong, arahkan ke halaman Surah dengan query
+
     if (searchTerm.trim() !== "") {
       navigate(`/surah?search=${encodeURIComponent(searchTerm)}`);
     }

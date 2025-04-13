@@ -4,7 +4,7 @@ import axios from 'axios';
 const JuzSide = () => {
   const [verses, setVerses] = useState([]);
   const [selectedJuz, setSelectedJuz] = useState(30);
-  const [showDropdown, setShowDropdown] = useState(false); // state kontrol dropdown
+  const [showDropdown, setShowDropdown] = useState(false); 
 
   useEffect(() => {
     const fetchJuz = async () => {

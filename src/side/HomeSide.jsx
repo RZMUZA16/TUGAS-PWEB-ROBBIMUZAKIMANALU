@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"; // ✅ Import navigate
+import { useNavigate } from "react-router-dom"; 
 import "./side.css";
 import image from "../assets/background.jpg";
 
 const HomeSide = () => {
     const [surahs, setSurahs] = useState([]);
-    const navigate = useNavigate(); // ✅ Harus di dalam komponen
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         const fetchSurahs = async () => {

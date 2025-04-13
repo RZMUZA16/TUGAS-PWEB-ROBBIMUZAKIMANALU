@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import "./side.css"; // Import CSS file for styling
+import "./side.css"; 
 const SurahSide = () => {
-  const { id } = useParams(); // Ambil ID dari URL
+  const { id } = useParams();
   const [verses, setVerses] = useState([]);
   const [surahName, setSurahName] = useState("");
 

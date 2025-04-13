@@ -9,20 +9,17 @@ const RukuSide = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // 1. Ambil data Ruku (teks Arab)
+ 
         const rukuRes = await axios.get(`http://api.alquran.cloud/v1/ruku/${selectedRuku}/quran-uthmani`);
         const ayahs = rukuRes.data.data.ayahs;
         setVerses(ayahs);
 
-        // 2. Ambil semua ayat dalam bentuk list nomor
         const ayahNumbers = ayahs.map((a) => a.number).join(",");
 
-        // 3. Ambil terjemahan Indonesia berdasarkan nomor ayat
         const translationRes = await axios.get(
           `http://api.alquran.cloud/v1/ayah/${ayahNumbers}/id.indonesian`
         );
 
-        // Cek jika response berupa array atau object tunggal
         let translationData = translationRes.data.data;
         if (!Array.isArray(translationData)) {
           translationData = [translationData];
