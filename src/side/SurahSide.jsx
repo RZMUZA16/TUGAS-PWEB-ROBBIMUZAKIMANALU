@@ -47,14 +47,14 @@ const SurahSide = () => {
           const translation = translations[index];
           return (
             <div key={ayah.numberInSurah} className="p-4 border rounded-lg shadow bg-white">
-              {/* Teks Arab */}
+
               <p
                 className="font-arabic"
                 style={{ direction: "rtl", textAlign: "right", fontFamily: "Scheherazade, serif" }}
               >
                 {ayah.text}
               </p>
-              {/* Terjemahan Bahasa Indonesia */}
+
               {translation && (
                 <p className="mt-2 text-dark">
                   <strong>Terjemahan:</strong> {translation.text}

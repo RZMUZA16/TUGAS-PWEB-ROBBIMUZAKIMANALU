@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./side.css" // Import gambar
+import "./side.css" 
 
 const RukuSide = () => {
   const [verses, setVerses] = useState([]);
@@ -10,22 +10,19 @@ const RukuSide = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // 1. Ambil teks Arab dari Ruku
+
         const rukuRes = await axios.get(`http://api.alquran.cloud/v1/ruku/${selectedRuku}/quran-uthmani`);
         const ayahs = rukuRes.data.data.ayahs;
         setVerses(ayahs);
 
-        // 2. Ambil seluruh terjemahan Indonesia
         const transRes = await axios.get(`http://api.alquran.cloud/v1/quran/id.indonesian`);
         const quranTranslation = transRes.data.data;
         let allTranslations = [];
 
-        // Flatten terjemahan dari semua surah ke dalam satu array
         quranTranslation.surahs.forEach((surah) => {
           allTranslations.push(...surah.ayahs);
         });
 
-        // 3. Filter terjemahan untuk ayat-ayat yang ada pada ruku ini
         const filteredTranslations = allTranslations.filter((translation) =>
           ayahs.some((a) => a.number === translation.number)
         );

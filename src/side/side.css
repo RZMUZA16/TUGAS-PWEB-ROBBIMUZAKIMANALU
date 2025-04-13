@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* kalau mau teks terlihat */
+  color: white;
   transition-delay: 2s;
   font-size: 30px;
   font-style: italic;
@@ -36,7 +36,7 @@
 
 .Surah-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 per baris */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 20px;
   padding: 20px;
   list-style-type: none;
@@ -73,7 +73,7 @@
   font-style: italic;
 }
 .font-arabic {
-  font-family: 'Scheherazade New', 'Amiri', serif; /* atau font arab yang kamu gunakan */
+  font-family: 'Scheherazade New', 'Amiri', serif; 
   direction: rtl;
   text-align: right;
   line-height: 2.5rem;
@@ -91,7 +91,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* agar teks terlihat */
+  color: white; 
   transition-delay: 2s;
   font-size: 30px;
   font-style: italic;
@@ -99,7 +99,6 @@
 
 .text-center {
   text-align: center;
-  /* Kalau ingin menekankan warna teks, bisa tambahkan properti color */
   color: black;
 }
 
@@ -121,7 +120,7 @@
 
 .Surah-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 per baris */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 20px;
   padding: 20px;
   list-style-type: none;
@@ -158,7 +157,7 @@
 }
 
 .font-arabic {
-  font-family: 'Scheherazade New', 'Amiri', serif; /* atau font Arab yang kamu gunakan */
+  font-family: 'Scheherazade New', 'Amiri', serif; 
   direction: rtl;
   text-align: right;
   line-height: 2.5rem;
@@ -169,7 +168,6 @@
   background: linear-gradient(to right, #0edd95, #0e9fdd);
 }
 
-/* Pastikan path gambar sesuai dengan struktur folder kamu */
 .full-page {
   min-height: 100vh;
   background-image: url('../assets/backgroundjuz.jpg');
