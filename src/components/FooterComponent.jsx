@@ -12,7 +12,7 @@ const Footer = () => {
           <p className="text-sm">&copy; {new Date().getFullYear()} Qur'an Web. All rights reserved.</p>
           <p className="text-xs mt-1">Dibuat dengan <span className="text-red-400">❤️</span> oleh komunitas Muslim</p>
         </div>
-        <div className="flex space-x-4 mt-4 md:mt-0">
+        <div className="text-center mt-4 md:mt-0">
           <a href="https://github.com/RZMUZA16" className="hover:text-green-300 transition">GitHub</a>
           <a href="https://alquran.cloud" className="hover:text-green-300 transition">API</a>
         </div>
