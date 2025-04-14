@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className="text-center mt-4 md:mt-0">
           <a href="https://github.com/RZMUZA16" className="hover:text-green-300 transition">GitHub</a>
-          <a href="https://alquran.cloud" className="hover:text-green-300 transition">API</a>
+          
         </div>
       </div>
     </footer>
