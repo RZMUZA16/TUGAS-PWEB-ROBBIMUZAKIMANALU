@@ -9,7 +9,7 @@ const JuzSide = () => {
   useEffect(() => {
     const fetchJuz = async () => {
       try {
-        const response = await axios.get(`http://api.alquran.cloud/v1/juz/${selectedJuz}/quran-uthmani`);
+        const response = await axios.get(`https://api.alquran.cloud/v1/juz/${selectedJuz}/quran-uthmani`);
         setVerses(response.data.data.ayahs);
       } catch (error) {
         console.error(`Gagal mengambil data Juz ${selectedJuz}:`, error);
