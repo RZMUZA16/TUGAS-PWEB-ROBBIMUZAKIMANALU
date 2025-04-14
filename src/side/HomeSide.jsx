@@ -11,7 +11,7 @@ const HomeSide = () => {
     useEffect(() => {
         const fetchSurahs = async () => {
             try {
-                const response = await axios.get("http://api.alquran.cloud/v1/quran/quran-uthmani");
+                const response = await axios.get("https://api.alquran.cloud/v1/quran/quran-uthmani");
                 setSurahs(response.data.data.surahs);
             } catch (error) {
                 console.error("Gagal mengambil data surah:", error);
@@ -55,7 +55,7 @@ const HomeSide = () => {
                             <li
                                 key={surah.number}
                                 className="Surah-container"
-                                onClick={() => navigate(`/surah/${surah.number}`)} // ✅ Navigasi saat diklik
+                                onClick={() => navigate(`/surah/${surah.number}`)}
                                 style={{ cursor: 'pointer' }}
                             >
                                 <div className="Surah-wrapper">

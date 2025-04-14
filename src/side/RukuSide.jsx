@@ -11,11 +11,11 @@ const RukuSide = () => {
     const fetchData = async () => {
       try {
 
-        const rukuRes = await axios.get(`http://api.alquran.cloud/v1/ruku/${selectedRuku}/quran-uthmani`);
+        const rukuRes = await axios.get(`https://api.alquran.cloud/v1/ruku/${selectedRuku}/quran-uthmani`);
         const ayahs = rukuRes.data.data.ayahs;
         setVerses(ayahs);
 
-        const transRes = await axios.get(`http://api.alquran.cloud/v1/quran/id.indonesian`);
+        const transRes = await axios.get(`https://api.alquran.cloud/v1/quran/id.indonesian`);
         const quranTranslation = transRes.data.data;
         let allTranslations = [];
 

@@ -12,13 +12,12 @@ const SurahSide = () => {
   useEffect(() => {
     const fetchSurahData = async () => {
       try {
-        // Fetch data teks Arab dan terjemahan Bahasa Indonesia secara paralel
+
         const [arabResponse, transResponse] = await Promise.all([
-          axios.get("http://api.alquran.cloud/v1/quran/quran-uthmani"),
-          axios.get("http://api.alquran.cloud/v1/quran/id.indonesian")
+          axios.get("https://api.alquran.cloud/v1/quran/quran-uthmani"),
+          axios.get("https://api.alquran.cloud/v1/quran/id.indonesian")
         ]);
 
-        // Cari surah yang sesuai dengan parameter id
         const arabSurah = arabResponse.data.data.surahs.find(
           (s) => s.number === parseInt(id)
         );
